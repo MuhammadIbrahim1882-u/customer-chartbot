@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harbor Goods Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <aside class="side">
+      <div class="brand"><span class="mark">H</span><span class="word">Harbor Goods</span></div>
+      <h1>How can we<br>help today?</h1>
+      <p class="lead">Ask about orders, shipping, returns or payments. A person can take over any time.</p>
+
+      <h2>Quick topics</h2>
+      <div class="topics" id="topics"></div>
+
+      <div class="hours">
+        <strong>Human agents</strong>
+        Mon–Fri, 9:00–18:00
+        <span class="demo">Demo orders: ORD-1001, ORD-1002, ORD-1003</span>
+      </div>
+    </aside>
+
+    <section class="chat" aria-label="Support chat">
+      <header class="chat-head">
+        <div class="who">
+          <strong>Harbor Assistant</strong>
+          <span class="status">Online · replies instantly</span>
+        </div>
+        <button id="clearBtn" class="ghost" type="button">Clear chat</button>
+      </header>
+
+      <div class="messages" id="messages" aria-live="polite"></div>
+      <div class="chips" id="chips"></div>
+
+      <div class="composer">
+        <input id="input" type="text" placeholder="Type your question…" autocomplete="off" aria-label="Your message">
+        <button id="sendBtn" type="button">
+          <span>Send</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="knowledge.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
